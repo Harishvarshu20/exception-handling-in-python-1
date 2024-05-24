@@ -1,0 +1,19 @@
+try:
+     while true:
+         num=int(input("Enter a positive number:"))
+         if num >=0:
+             print(num*num)
+         else:
+              raise Value Error("Negative number")
+except ValueErroe as ve:
+    print(ve.args)
+
+output:
+    Enter a positive number:18
+    324
+    Enter a positive number:26
+    676
+    Enter a positive number:-52
+    ("Negative number")
+    Enter a positive number:-10
+    ("Negative number")
